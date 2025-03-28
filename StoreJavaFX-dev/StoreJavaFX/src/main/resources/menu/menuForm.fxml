@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vbMenuFormRoot" prefHeight="50.0" prefWidth="700.0"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ee.ivkhkdev.StoreJavaFX.controller.MenuFormController">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu fx:id="menuProduct" text="ТОВАРЫ">
+                    <items>
+                        <MenuItem fx:id="showProductFormItem" onAction="#showProductForm" text="Добавить товары" />
+                        <MenuItem fx:id="showProductListItem" onAction="#showProductList" text="Список товаров" />
+                    </items>
+                </Menu>
+                <Menu text="ПРОИЗВОДИТЕЛИ">
+                    <items>
+                        <MenuItem fx:id="showCompanyFormItem" onAction="#showCompanyForm" text="Добавить производителя" />
+                        <MenuItem fx:id="showCompanyListItem" onAction="#showCompanyList" text="Список производителей" />
+                    </items>
+                </Menu>
+                <Menu fx:id="menuCustomer" text="ПОКУПАТЕЛИ">
+                    <items>
+                        <MenuItem fx:id="showNewCustomerFormItem" onAction="#showNewCustomerForm" text="Добавить покупателя" />
+                        <MenuItem fx:id="showCustomerListFormItem" onAction="#showCustomerListForm" text="Список покупателей" />
+                    </items>
+                </Menu>
+                <Menu text="ПОКУПКА">
+                    <items>
+                        <MenuItem fx:id="showPurchaseFormItem" onAction="#showPurchaseForm" text="Купить товар" />
+                        <MenuItem fx:id="showIncomeFormItem" onAction="#showIncomeForm" text="Доход магазина" />
+                        <MenuItem fx:id="showRatingFormItem" onAction="#showRatingForm" text="Рейтинг товаров" />
+                    </items>
+                </Menu>
+                <Menu text="ПОЛЬЗОВАТЕЛЬ">
+                    <items>
+                        <MenuItem fx:id="logoutItem" onAction="#logout" text="Выход" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label alignment="CENTER" prefHeight="17.0" prefWidth="600.0" />
+    </children>
+</VBox>

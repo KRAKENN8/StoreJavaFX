@@ -1,0 +1,28 @@
+package ee.ivkhkdev.StoreJavaFX.model.repository;
+
+import ee.ivkhkdev.StoreJavaFX.model.entity.Purchase;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+public interface PurchaseRepository extends JpaRepository<Purchase, Long> {
+
+    @Query("select sum(p.totalPrice) from Purchase p where p.purchaseDate between :start and :end")
+    Double getIncomeBetween(@Param("start") LocalDateTime start, @Param("end") LocalDateTime end);
+
+    @Query("select p.product, sum(p.quantity) as totalSold " +
+            "from Purchase p " +
+            "where p.purchaseDate between :start and :end " +
+            "group by p.product " +
+            "order by totalSold desc")
+    List<Object[]> getTopProductBetween(@Param("start") LocalDateTime start, @Param("end") LocalDateTime end);
+
+    @Query("select p.product, sum(p.quantity) as totalSold " +
+            "from Purchase p " +
+            "group by p.product " +
+            "order by totalSold desc")
+    List<Object[]> getTopProductAllTime();
+}

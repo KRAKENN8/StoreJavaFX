@@ -16,10 +16,10 @@
                 <TableColumn fx:id="tcUsername" text="Логин" prefWidth="150"/>
                 <TableColumn fx:id="tcFirstname" text="Имя" prefWidth="150"/>
                 <TableColumn fx:id="tcLastname" text="Фамилия" prefWidth="150"/>
-                <TableColumn fx:id="tcBalance" text="Баланс" prefWidth="100"/>
+                <TableColumn fx:id="tcBalance" text="Баланс" prefWidth="155"/>
             </columns>
         </TableView>
-        <HBox alignment="CENTER" spacing="10">
+        <HBox alignment="CENTER" prefHeight="50.0" spacing="10">
             <children>
                 <Button fx:id="editSelectedCustomer" onAction="#editSelectedCustomer" text="Редактировать продукт" />
                 <Button fx:id="deleteSelectedCustomer" onAction="#deleteSelectedCustomer" text="Удалить продукт" />

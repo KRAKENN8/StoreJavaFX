@@ -9,18 +9,18 @@
 <VBox prefHeight="400" prefWidth="700" spacing="10" style="-fx-padding: 10;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ee.ivkhkdev.StoreJavaFX.controller.lists.ProductListController">
 
     <children>
-        <TableView fx:id="tvProduct" prefHeight="350.0" prefWidth="600.0">
+        <TableView fx:id="tvProduct" prefHeight="400.0" prefWidth="700.0">
             <columns>
                 <TableColumn fx:id="tcId" prefWidth="50.0" text="Id" />
-                <TableColumn fx:id="tcName" prefWidth="150.0" text="Название" />
-                <TableColumn fx:id="tcPrice" prefWidth="80.0" text="Цена" />
-                <TableColumn fx:id="tcQuantity" prefWidth="80.0" text="В наличие" />
-                <TableColumn fx:id="tcStock" prefWidth="80.0" text="Поступило на склад" />
-                <TableColumn fx:id="tcCompany" prefWidth="80.0" text="Производитель" />
+                <TableColumn fx:id="tcName" prefWidth="200.0" text="Название" />
+                <TableColumn fx:id="tcPrice" prefWidth="50.0" text="Цена" />
+                <TableColumn fx:id="tcQuantity" prefWidth="100.0" text="В наличие" />
+                <TableColumn fx:id="tcStock" prefWidth="150.0" text="Поступило на склад" />
+                <TableColumn fx:id="tcCompany" prefWidth="130.0" text="Производитель" />
             </columns>
         </TableView>
 
-        <HBox alignment="CENTER" spacing="10">
+        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="700.0" spacing="10">
             <children>
                 <Button fx:id="editSelectedProduct" onAction="#editSelectedProduct" text="Редактировать продукт" />
                 <Button fx:id="deleteSelectedProduct" onAction="#deleteSelectedProduct" text="Удалить продукт" />

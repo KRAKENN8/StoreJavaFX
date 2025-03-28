@@ -10,14 +10,14 @@
 <VBox fx:id="vbMainFormRoot" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ee.ivkhkdev.StoreJavaFX.controller.MainFormController">
 
     <children>
-        <TableView fx:id="tvProductList" prefHeight="426.0" prefWidth="600.0">
+        <TableView fx:id="tvProductList" prefHeight="500.0" prefWidth="600.0">
             <columns>
-                <TableColumn fx:id="tcId" prefWidth="47.0" text="Id" />
-                <TableColumn fx:id="tcName" prefWidth="194.0" text="Название" />
-                <TableColumn fx:id="tcCompany" prefWidth="84.0" text="Производители" />
-                <TableColumn fx:id="tcPrice" prefWidth="92.0" text="Цена" />
-                <TableColumn fx:id="tcQuantity" prefWidth="90.0" text="Количество" />
-                <TableColumn fx:id="tcStock" prefWidth="90.0" text="В наличии" />
+                <TableColumn fx:id="tcId" prefWidth="50.0" text="Id" />
+                <TableColumn fx:id="tcName" prefWidth="200.0" text="Название" />
+                <TableColumn fx:id="tcCompany" prefWidth="150.0" text="Производители" />
+                <TableColumn fx:id="tcPrice" prefWidth="100.0" text="Цена" />
+                <TableColumn fx:id="tcQuantity" prefWidth="95.0" text="В наличиие" />
+                <TableColumn fx:id="tcStock" prefWidth="100.0" text="Поступило на склад" />
             </columns>
         </TableView>
         <HBox fx:id="hbEditProduct" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="600.0" spacing="5.0" visible="false">

@@ -11,12 +11,12 @@
     <children>
         <TableView fx:id="tvCompanyList" prefHeight="300.0" prefWidth="600.0">
             <columns>
-                <TableColumn fx:id="tcId" prefWidth="50.0" text="Id" />
-                <TableColumn fx:id="tcName" prefWidth="200.0" text="Название" />
-                <TableColumn fx:id="tcContact" prefWidth="200.0" text="Контакт" />
+                <TableColumn fx:id="tcId" minWidth="50.0" prefWidth="50.0" text="Id" />
+                <TableColumn fx:id="tcName" prefWidth="300.0" text="Название" />
+                <TableColumn fx:id="tcContact" prefWidth="330.0" text="Контакт" />
             </columns>
         </TableView>
-        <HBox alignment="CENTER" spacing="5.0">
+        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="680.0" spacing="5.0">
             <children>
                 <Button fx:id="editCompanyButton" onAction="#editSelectedCompany" text="Редактировать производителя">
                     <HBox.margin>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="700.0" alignment="CENTER" spacing="10" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ee.ivkhkdev.StoreJavaFX.controller.selects.SelectedCustomerFormController">
+    <children>
+        <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="Информация о покупателе" />
+
+        <Label style="-fx-font-weight: bold;" text="Имя:" />
+        <Label fx:id="firstnameLabel" />
+
+        <Label style="-fx-font-weight: bold;" text="Фамилия:" />
+        <Label fx:id="lastnameLabel" />
+
+        <Label style="-fx-font-weight: bold;" text="Логин:" />
+        <Label fx:id="usernameLabel" />
+
+        <Label style="-fx-font-weight: bold;" text="Баланс:" />
+        <Label fx:id="balanceLabel" />
+
+        <Button alignment="CENTER" onAction="#handleClose" text="Закрыть" />
+    </children>
+</VBox>

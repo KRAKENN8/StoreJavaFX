@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="400.0" prefWidth="700.0" alignment="CENTER" spacing="10" style="-fx-padding: 20;"
+      xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ee.ivkhkdev.StoreJavaFX.controller.edits.EditCustomerFormController">
+    <children>
+        <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="Редактирование покупателя" />
+
+        <!-- Логин -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <children>
+                <Label text="Логин:" />
+                <TextField fx:id="tfUsername" />
+            </children>
+        </HBox>
+
+        <!-- Имя -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <children>
+                <Label text="Имя:" />
+                <TextField fx:id="tfFirstname" />
+            </children>
+        </HBox>
+
+        <!-- Фамилия -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <children>
+                <Label text="Фамилия:" />
+                <TextField fx:id="tfLastname" />
+            </children>
+        </HBox>
+
+        <!-- Баланс -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <children>
+                <Label text="Баланс:" />
+                <TextField fx:id="tfBalance" />
+            </children>
+        </HBox>
+
+        <!-- Новый пароль -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <children>
+                <Label text="Новый пароль:" />
+                <PasswordField fx:id="pfNewPassword" />
+            </children>
+        </HBox>
+
+        <!-- Подтверждение пароля -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <children>
+                <Label text="Подтверждение:" />
+                <PasswordField fx:id="pfConfirmPassword" />
+            </children>
+        </HBox>
+
+        <!-- Кнопки -->
+        <HBox alignment="CENTER" spacing="5.0">
+            <children>
+                <Button onAction="#saveCustomer" text="Сохранить" />
+                <Button onAction="#goBack" text="Назад" />
+            </children>
+        </HBox>
+    </children>
+</VBox>
